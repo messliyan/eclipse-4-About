@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.e4.ui.workbench.swt.E4Application"
+            name="E9">
+         <property
+               name="appName" value="E9">
+         </property>
+      </product>
+   </extension>
+   <extension
+      point="org.eclipse.core.expressions.definitions">
+    <definition
+            id="core.expressions.selectionset">
+      <with variable="org.eclipse.ui.selection">
+        <iterate ifEmpty="false" operator="or">
+          <instanceof
+                value="model.CompanyEntiy">
+          </instanceof>
+        </iterate>
+      </with>
+    </definition>
+    <definition
+          id="core.expressions.selectionset2">
+       <with
+             variable="myactivePartId">
+          <equals
+                value="com.example.e4.rcp.todo.part.todooverview">
+          </equals>
+       </with>
+    </definition>
+    <definition
+          id="E5.definition2">
+    </definition>
+</extension>
+   <extension
+         id="product1"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.e4.ui.workbench.swt.E4Application"
+            name="data">
+         <property
+               name="appName"
+               value="data">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

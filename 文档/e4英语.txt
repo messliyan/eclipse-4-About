@@ -1,0 +1,58 @@
+turoeial 教程
+
+1、内容
+
+model
+
+views 
+
+
+extending model  
+
+injection
+ 
+annotation
+
+services
+
+3.4 对比
+
+从3到4
+
+Model Spy 可视化 编程
+
+ctrl+shift+f9
+
+show control
+
+可加 不可去（窗口+组件）
+
+
+
+
+34
+
+
+application model
+
+
+rendering engin
+
+css style
+
+
+
+equinox,osgu  EMF core
+
+dependency injection 
+
+services
+
+
+
+
+ Container Data 
+
+
+
+

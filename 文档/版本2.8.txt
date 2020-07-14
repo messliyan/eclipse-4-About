@@ -1,0 +1,123 @@
+1、ecplcie工作区间和打包后 存放 cofn和fdsjion文件夹   ---dug所用
+
+
+2.final报错 1.8不报
+	}
+
+3获取当前时间
+
+long startTime = System.currentTimeMillis();
+
+System.out.println( System.currentTimeMillis() - startTime);// new Date()为获取当前系统时间
+	
+
+
+
+1、产品配置 102  108
+
+2、配置少插件 116
+
+3、导出和日志问题  150
+
+
+4 model  spy    222
+
+5 @Active 追踪上下文   249
+
+6 Service plug-in（ ITodoService interface 实现） 294
+
+7 JFace （详细）  414
+
+8  menus and toolbars   453
+
+9 key bindings  497
+
+11 依赖性注入弹框 722
+
+		instant Eclipse书的	42
+
+12  wizard  向导框  528
+
+13  数据绑定 验证器  554
+
+
+14 提示符 ControlDecorators   555
+
+15 数据绑定  swt 560
+
+16 数据绑定  JFace 570
+
+17 Selection Service  589
+
+18  Search for a perspective model服务来找见透视图    
+
+19  Creating dynamic menu entries 动态创建 菜单  608
+
+20  Switching perspectives  part服务来切换透视图  613
+
+21 editors编辑器    621
+
+22  Sharing elements between perspectives 不同透视图 同一视图
+
+23  图片描述符    647
+
+24  线程 Asynchronous processing job    669
+26 进度条视图 676
+
+25 事件+数据绑定   700 
+
+26  Create the wizard via dependency injection 注入向导框   721
+
+ Eclipse context   上下文 702
+
+27 关闭窗口操作 add-on  750
+  
+28 Tags 和窗口默认最大化  758
+
+29  Persisted state 持久化数据  759
+
+30  contribute 插件扩展    774 
+
+
+31 IEclipseContext和 life cycle 系统生命周期 799
+
+	访问启动参数
+
+32 生命周期和登录    805
+
+33 preferences 首选项   815
+
+34 Internationalization  国际化 829
+ 
+35 自定义注解    1=867
+
+36 自定义扩展点 955 
+
+37  Eclipse styling with CSS 样式  980
+
+
+错误框
+
+MultiStatus status = createMultiStatus(e.getLocalizedMessage(), e);
+			// show error dialog
+			ErrorDialog.openError(shell, "Error", "This is an error", status);
+
+private static MultiStatus createMultiStatus(String msg, Throwable t) {
+
+		List<Status> childStatuses = new ArrayList<Status>();
+		StackTraceElement[] stackTraces = Thread.currentThread().getStackTrace();
+
+ 		for (StackTraceElement stackTrace: stackTraces) {
+			Status status = new Status(IStatus.ERROR,
+					"com.example.e4.rcp.todo", stackTrace.toString());
+			childStatuses.add(status);
+		}
+
+		MultiStatus ms = new MultiStatus("com.example.e4.rcp.todo",
+				IStatus.ERROR, childStatuses.toArray(new Status[] {}),
+				t.toString(), t);
+		return ms;
+	}
+
+								
+									

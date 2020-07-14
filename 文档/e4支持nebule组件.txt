@@ -1,0 +1,9 @@
+1、本插件——>依赖性——>nebule组件插件
+2、feature+组件 依赖的插件
+	比如org.eclipse.nebula.widgets.opal.preferencewindow插件
+	所需
+	org.eclipse.nebula.widgets.opal.commons
+	 +org.eclipse.nebula.widgets.opal.dialog
+	+org.eclipse.nebula.widgets.opal.titledseparator
+	
+	+组件自身

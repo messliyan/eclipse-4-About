@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmlns:ui="http://www.eclipse.org/ui/2010/UIModel/application/ui" xmi:id="_6wlLcMgZEeSyMNYR5xypkQ" elementId="E5.application" bindingContexts="_6wlLecgZEeSyMNYR5xypkQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_6wlLccgZEeSyMNYR5xypkQ" elementId="E5.window.main" label="Eclipse 4 RCP Application" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_xPf8wMSyEemDw6jWUUdSJA" elementId="e5.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_xgHysMSyEemDw6jWUUdSJA" elementId="E5.partsashcontainer.sample">
+        <children xsi:type="basic:PartStack" xmi:id="_6wlLk8gZEeSyMNYR5xypkQ" elementId="E5.partstack.sample">
+          <children xsi:type="basic:Part" xmi:id="_6wlLlMgZEeSyMNYR5xypkQ" elementId="E5.part.sample" containerData="600" contributionURI="bundleclass://E5/e5.parts.SamplePart" label="Sample Part" iconURI="platform:/plugin/E5/icons/home.png" closeable="true"/>
+          <children xsi:type="basic:Part" xmi:id="_U8EZILmKEemMPILLxC-O9A" elementId="e5.part.hellow" containerData="200" contributionURI="bundleclass://E5/view.ExampleView2" label="Hellow" iconURI="" bindingContexts="_5uB2kLtiEemIrt-Uuc1S_A" closeable="true">
+            <menus xsi:type="menu:PopupMenu" xmi:id="_vA6TYMS0EemDw6jWUUdSJA" elementId="com.packtpub.e4.application.popupmenu.popuptable" label="hollow" iconURI="platform:/plugin/E5/icons/open_in_app.png">
+              <children xsi:type="menu:HandledMenuItem" xmi:id="_48rY8MS0EemDw6jWUUdSJA" elementId="com.packtpub.e4.application.popupmenu.hello" label="hollow4" command="_KJSOcLj6EemMPILLxC-O9A">
+                <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_RGYj4MS1EemDw6jWUUdSJA" coreExpressionId="core.expressions.selectionset"/>
+                <parameters xmi:id="_XM4oEMS1EemDw6jWUUdSJA" elementId="e5.parameter.hollow" name="e5.commandparameter.parameters" value="&#x6211;&#x5fc3;&#x6c38;&#x6052;"/>
+              </children>
+            </menus>
+            <menus xmi:id="_vXoxUMS0EemDw6jWUUdSJA" elementId="com.packtpub.e4.application.popupmenu.table">
+              <tags>ViewMenu</tags>
+              <children xsi:type="menu:HandledMenuItem" xmi:id="_iXwlEMS1EemDw6jWUUdSJA" elementId="e5.handledmenuitem.hollow5" label="hollow5" command="_t-w-gLpvEemIrt-Uuc1S_A">
+                <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_yIZMQMS1EemDw6jWUUdSJA" coreExpressionId="core.expressions.selectionset2"/>
+                <parameters xmi:id="_0J-pgMS1EemDw6jWUUdSJA" elementId="e5.parameter.hollow" name="e5.commandparameter.parameters" value="&#x6211;&#x5fc3;&#x4e0d;&#x6c38;&#x6052;"/>
+              </children>
+            </menus>
+          </children>
+        </children>
+        <children xsi:type="basic:PartSashContainer" xmi:id="_PIxvkLmwEemHHZe1hKsHBw" elementId="e5.partsashcontainer.0">
+          <children xsi:type="basic:Part" xmi:id="_b9KoELmwEemHHZe1hKsHBw" elementId="e5.part.mwidow" containerData="10000" contributionURI="bundleclass://E5/view.ExampleView3" label="Mwidow"/>
+          <children xsi:type="basic:Part" xmi:id="_c7YVELm2EemHHZe1hKsHBw" elementId="e5.part.rainbow" containerData="60000" contributionURI="bundleclass://E5/widow.Rainbow" label="Rainbow"/>
+        </children>
+        <children xsi:type="basic:PartSashContainer" xmi:id="_-XF_cLnNEemHHZe1hKsHBw" elementId="e5.partsashcontainer.3">
+          <children xsi:type="basic:Part" xmi:id="_XG7SELnVEemIrt-Uuc1S_A" elementId="e5.part.radmom" contributionURI="bundleclass://E5/view.ExampleView6" label="hellow"/>
+          <children xsi:type="basic:Part" xmi:id="_OpcPgLpxEemIrt-Uuc1S_A" elementId="e5.part.random" contributionURI="bundleclass://E5/view.ExampleView5" label="random"/>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_6wlLicgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_6wlLisgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.menu" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLi8gZEeSyMNYR5xypkQ" elementId="E5.handleditem.file.open" label="Open" iconURI="platform:/plugin/E5/icons/open_in_app.png" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLjMgZEeSyMNYR5xypkQ" elementId="E5.handleditem.save" label="Save" iconURI="platform:/plugin/E5/icons/save_edit.png" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLjcgZEeSyMNYR5xypkQ" elementId="exit" label="exit" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_6wlLjsgZEeSyMNYR5xypkQ" elementId="help" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLj8gZEeSyMNYR5xypkQ" elementId="E5.handleditem.about" label="About" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_SNReQLpTEemIrt-Uuc1S_A" elementId="e5.menu.hollowmenu" label="hollow menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Yv1zYLpTEemIrt-Uuc1S_A" elementId="e5.handledmenuitem.hollow2" label="hollow2" command="_KJSOcLj6EemMPILLxC-O9A">
+          <parameters xmi:id="_ZU-gwLpTEemIrt-Uuc1S_A" elementId="e5.parameter.hollow" name="e5.commandparameter.value" value="Hello World Parameter"/>
+        </children>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_GTVzQLtNEemIrt-Uuc1S_A" elementId="e5.menuseparator.0"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_CV91ELpYEemIrt-Uuc1S_A" elementId="e5.directmenuitem.directhellow" label="Direct hellow " contributionURI="bundleclass://E5/handler.MyHandler"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_6wlLlcgZEeSyMNYR5xypkQ" elementId="E5.trimbar.top">
+      <children xsi:type="menu:ToolBar" xmi:id="_6wlLlsgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6wlLmMgZEeSyMNYR5xypkQ" elementId="E5.handleditem.trimbar.top.save" iconURI="platform:/plugin/E5/icons/save_edit.png" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6wlLl8gZEeSyMNYR5xypkQ" elementId="E5.handleditem.trimbar.top.open" iconURI="platform:/plugin/E5/icons/open_in_app.png" command="_KJSOcLj6EemMPILLxC-O9A"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_SKDYoMS7EemDw6jWUUdSJA" elementId="e5.handledtoolitem.drop-downtool" label="Drop-down tool">
+          <menu xmi:id="_TdnSQMS7EemDw6jWUUdSJA" elementId="e5.menu.0">
+            <children xsi:type="menu:HandledMenuItem" xmi:id="_UvZDMMS7EemDw6jWUUdSJA" elementId="e5.handledmenuitem.drop-downtoolitems" label="Drop-down tool items"/>
+            <children xsi:type="menu:HandledMenuItem" xmi:id="_YJcvQMS7EemDw6jWUUdSJA" elementId="e5.handledmenuitem.drop-downtoolitems2" label="Drop-down tool items2"/>
+          </menu>
+        </children>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_OfRvYLtMEemIrt-Uuc1S_A" elementId="e5.toolcontrol.0" contributionURI="bundleclass://E5/ToolControl.SearchToolItem"/>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_6wlLfcgZEeSyMNYR5xypkQ" elementId="e5.handler.quitCommand" contributionURI="bundleclass://E5/e5.handlers.QuitHandler" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_6wlLgcgZEeSyMNYR5xypkQ" elementId="e5.handler.openCommand" contributionURI="bundleclass://E5/e5.handlers.OpenHandler" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_6wlLhMgZEeSyMNYR5xypkQ" elementId="e5.handler.saveCommand" contributionURI="bundleclass://E5/e5.handlers.SaveHandler" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_6wlLh8gZEeSyMNYR5xypkQ" elementId="e5.handler.aboutCommand" contributionURI="bundleclass://E5/e5.handlers.AboutHandler" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_N3wrULj6EemMPILLxC-O9A" elementId="e5.handler.0" contributionURI="bundleclass://E5/handler.MyHandler" command="_KJSOcLj6EemMPILLxC-O9A"/>
+  <handlers xmi:id="_plml4LpvEemIrt-Uuc1S_A" elementId="hollow" contributionURI="bundleclass://E5/handler.hollow" command="_t-w-gLpvEemIrt-Uuc1S_A"/>
+  <bindingTables xmi:id="_6wlLfsgZEeSyMNYR5xypkQ" elementId="E5.bindingtable" bindingContext="_6wlLecgZEeSyMNYR5xypkQ">
+    <bindings xmi:id="_6wlLf8gZEeSyMNYR5xypkQ" elementId="E5.keybinding.m1q" keySequence="M1+Q" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
+    <bindings xmi:id="_6wlLgsgZEeSyMNYR5xypkQ" elementId="E5.keybinding.m1o" keySequence="M1+O" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
+    <bindings xmi:id="_6wlLhcgZEeSyMNYR5xypkQ" elementId="E5.keybinding.m1s" keySequence="M1+S" command="_KJSOcLj6EemMPILLxC-O9A"/>
+    <bindings xmi:id="_6wlLiMgZEeSyMNYR5xypkQ" elementId="E5.keybinding.m1a" keySequence="M1+A" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
+    <bindings xmi:id="_qZta0LpYEemIrt-Uuc1S_A" elementId="Leave blank" keySequence="CTRL+O" command="_KJSOcLj6EemMPILLxC-O9A"/>
+  </bindingTables>
+  <bindingTables xmi:id="_8I6koLtiEemIrt-Uuc1S_A" elementId="e5.bindingtable.0" bindingContext="_5uB2kLtiEemIrt-Uuc1S_A">
+    <bindings xmi:id="_9d_hMLtiEemIrt-Uuc1S_A" elementId="e5.keybinding.0" keySequence="M1+W" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
+  </bindingTables>
+  <rootContext xmi:id="_6wlLecgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_6wlLesgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_6wlLe8gZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+    <children xmi:id="_5uB2kLtiEemIrt-Uuc1S_A" elementId="e5.bindingcontext.tset" name="tset"/>
+  </rootContext>
+  <commands xmi:id="_6wlLfMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_6wlLgMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.open" commandName="openCommand"/>
+  <commands xmi:id="_6wlLg8gZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_6wlLhsgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <commands xmi:id="_KJSOcLj6EemMPILLxC-O9A" elementId="e5.command.hellow" commandName="hellow">
+    <parameters xmi:id="_M9-ZwLpREemIrt-Uuc1S_A" elementId="e5.commandparameter.value" name="hello.value"/>
+  </commands>
+  <commands xmi:id="_t-w-gLpvEemIrt-Uuc1S_A" elementId="e5.command.hollow" commandName="hollow" description="hollow menu">
+    <parameters xmi:id="_EEvYQLtOEemIrt-Uuc1S_A" elementId="e5.commandparameter.parameters" name="Command Parameter parameters"/>
+  </commands>
+  <addons xmi:id="_95buMcSxEemDw6jWUUdSJA" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_95buMsSxEemDw6jWUUdSJA" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_95buM8SxEemDw6jWUUdSJA" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_95buNMSxEemDw6jWUUdSJA" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_95buNcSxEemDw6jWUUdSJA" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_95buNsSxEemDw6jWUUdSJA" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_95buN8SxEemDw6jWUUdSJA" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+</application:Application>
